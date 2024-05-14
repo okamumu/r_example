@@ -1,0 +1,22 @@
+{
+    "name": "R Development Container",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions" : [
+                "REditorSupport.r"
+            ],
+            "settings": {
+                "r.rpath.linux": "/usr/local/lib/R/bin/R",
+                "r.rterm.linux": "/usr/local/lib/R/bin/R",
+                "r.lsp.debug": true,
+                "r.sessionWatcher": true,
+                "r.rterm.option": [
+                    "--no-save",
+                    "--no-restore",
+                    "--r-binary=/usr/local/lib/R/bin/R"
+                ]
+            }
+        }
+    }
+}
